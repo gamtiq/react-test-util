@@ -1,0 +1,61 @@
+{
+  "name": "react-test-util",
+  "version": "1.0.0",
+  "description": "Useful utility functions for testing React components",
+  "main": "dist/react-test-util.js",
+  "module": "src/index.js",
+  "scripts": {
+    "build": "microbundle build --entry \"src/*.js\" --output dist --format cjs --no-compress",
+    "lint": "eslint --cache --max-warnings 0 \"**/*.js\"",
+    "lint-error": "eslint --cache \"**/*.js\"",
+    "lint-all": "eslint --max-warnings 0 \"**/*.js\"",
+    "lint-all-error": "eslint \"**/*.js\"",
+    "check": "npm run lint",
+    "check-all": "npm run lint-all",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gamtiq/react-test-util.git"
+  },
+  "keywords": [
+    "react",
+    "test",
+    "tests",
+    "testing",
+    "testutil",
+    "testutils",
+    "util",
+    "utils",
+    "utility",
+    "helper",
+    "helpers",
+    "enzyme",
+    "shallow",
+    "simulate",
+    "wrap",
+    "wrapper",
+    "check",
+    "intl",
+    "react-intl"
+  ],
+  "author": "Denis Sikuler",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/gamtiq/react-test-util/issues"
+  },
+  "homepage": "https://github.com/gamtiq/react-test-util#readme",
+  "dependencies": {
+    "chai": ">=4.0.0"
+  },
+  "devDependencies": {
+    "eslint": "6.3.0",
+    "eslint-config-guard": "1.0.0",
+    "husky": "3.0.5",
+    "microbundle": "0.11.0"
+  },
+  "peerDependencies": {
+    "enzyme": ">=3.0.0",
+    "react-intl": ">=3.0.0"
+  }
+}
